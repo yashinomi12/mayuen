@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mayuen</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-logo">
+        <%= link_to 'MayuEnglishSchool',root_path %>
+      </div>
+      <div class="header-list">
+        <ul>
+          <li><%= link_to 'profile', profile_path %></li>
+          <li><%= link_to 'lesson', lesson_path %></li>
+          <li><%= link_to 'access', access_path %></li>
+          <li><%= link_to 'blog', blog_path %></li>
+          <li>contact</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <%= yield %>
+
+    <div class="footer">
+      <h1>©️Mayumi Kometani</h1>
+    </div>
+  </body>
+</html>

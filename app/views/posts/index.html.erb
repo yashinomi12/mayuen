@@ -1,0 +1,11 @@
+<div class="new-post">
+  <%= link_to 'new', blog_new_path %>
+</div>
+<div class="box-index">
+  <% @posts.each do |post| %>
+    <div class="box-post">
+      <h2><%= post.created_at%></h2>
+      <%= link_to post.title, "/blog/#{post.id}" %>
+    </div>
+  <% end %>
+</div>

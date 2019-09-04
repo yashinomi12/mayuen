@@ -1,0 +1,66 @@
+body{
+  font-family:sans-serif;
+  a:visited{text-decoration: none;}
+}
+
+
+.header{
+  background-color: #ffffee;
+  height: 140px;
+  width: 100%;
+  z-index: 9999;
+}
+
+//@font-face{
+//  font-family: 'Montserrat Subrayada';
+//  src: font-url('MontserratSubrayada-Bold.ttf') format('truetype');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+
+.header-logo{
+  color: #000055;
+  a:visited {color:#000055;}
+  a:link {text-decoration: none;}
+  a:hover {text-decoration: none;}
+  padding: 30px 60px 20px 60px;
+  font-size: 50px;
+  float:left;
+  font-family: 'Futura';
+}
+
+
+li{
+  list-style: none;
+  float: left;
+  padding: 60px 20px;
+  color: #aaaa;
+  a:visited{color:#aaaa; text-decoration: none;}
+  a:link {text-decoration: none;}
+  a:hover {color: #555555; text-decoration: none;}
+  font-family: 'Bradley Hand';
+  font-size: 20px
+}
+
+.main{
+  height: 500px;
+  width: 100%;
+
+}
+
+.footer{
+  float:left;
+  background-color: #ffffee;
+  height: 140px;
+  width: 100%;
+  position: relative;
+}
+
+.footer h1{
+  color: #aaaa;
+  font-family: 'Bradley Hand';
+  font-size: 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: normal;
+}

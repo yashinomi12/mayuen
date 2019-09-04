@@ -1,0 +1,104 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+  text-align:center;
+  font-family: 'Bradley Hand';
+  font-size: 20px;
+  color:#aaaaaa
+}
+.box-post {
+    padding: 0.5em 1em;
+    color: #222222;
+    a:hover {color:#111111; text-decoration: none;}
+    a:link {color:#222222; text-decoration: none;}
+    a:visited {color:#222222; text-decoration: none;}
+    font-size: 20px;
+    background: #eeeeee;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.box{
+    padding: 0.5em 1em;
+    color: #222222;
+    a:hover {color:#111111; text-decoration: none;}
+    a:link {color:#222222; text-decoration: none;}
+    a:visited {color:#222222; text-decoration: none;}
+    font-size: 20px;
+    background: #eeeeee;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.new-post{
+  width: 100%;
+  color: #aaaa;
+  a:visited{color:#aaaa; text-decoration: none;}
+  a:link {text-decoration: none;}
+  a:hover {color: #555555; text-decoration: none;}
+  font-family: 'Bradley Hand';
+  font-size: 20px;
+  width: 100px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.new-post a{
+  text-align: center;
+}
+
+.new-post-submit{
+  position: relative;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+.new-post-submit input{
+  font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 10px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px dashed #1b2538;
+	border-radius: 6px;
+	outline: none;
+}
+
+.new-post-submit textarea{
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 3px 0;
+  border: 1px dashed #1b2538;
+	border-radius: 8px;
+  resize: none;
+}
+
+input[type="submit"]{
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding: 0 16px 10px 0;
+  transition: 0.2s;
+  border: none;
+  outline: none;
+  text-align: right;
+  font-family: 'Bradley Hand';
+  font-size: 1.5em;
+  color: #aaaa;
+}
+
+input[type="submit"]:hover{
+  color: #555555; text-decoration: none;
+}
