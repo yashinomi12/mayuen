@@ -1,0 +1,11 @@
+<h1>edit</h1>
+<%= form_tag({contoller: :posts, action: :update}, method: :post) do %>
+  <div class="new-post-submit">
+    <textarea name="title" rows="1" cols="80"><%= @post.title %></textarea>
+    <textarea name="content" rows="8" cols="80"><%= @post.content %></textarea>
+    <input type="submit" value="edit">
+    <div class="delete-btn">
+      <%= link_to "delete", "/blog/#{@post.id}/destroy", method: :post %>
+    </div>
+  </div>
+<% end %>

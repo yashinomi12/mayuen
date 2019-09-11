@@ -13,17 +13,24 @@ h1{
     a:hover {color:#111111; text-decoration: none;}
     a:link {color:#222222; text-decoration: none;}
     a:visited {color:#222222; text-decoration: none;}
-    font-size: 20px;
+    font-size: 24px;
     background: #eeeeee;
     width: 30%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-family: 'TsukuARdGothic-Regular';
+}
+
+.box-post p{
+    color: #222222;
+    font-size: 18px;
+    text-align: right;
 }
 
 .box{
-    padding: 0.5em 1em;
+    padding: 0.5em;
     color: #222222;
     a:hover {color:#111111; text-decoration: none;}
     a:link {color:#222222; text-decoration: none;}
@@ -34,7 +41,10 @@ h1{
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+.box-index{
+    margin-bottom: 40px;
 }
 
 
@@ -85,7 +95,7 @@ h1{
 }
 
 input[type="submit"]{
-  font: 15px/24px sans-serif;
+  font: 24px 'Bradley Hand';
   box-sizing: border-box;
   width: 100%;
   margin: auto;
@@ -94,11 +104,31 @@ input[type="submit"]{
   border: none;
   outline: none;
   text-align: right;
-  font-family: 'Bradley Hand';
-  font-size: 1.5em;
   color: #aaaa;
 }
 
 input[type="submit"]:hover{
   color: #555555; text-decoration: none;
+}
+
+.delete-btn{
+  text-align: right;
+}
+
+.delete-btn a{
+  font: 24px 'Bradley Hand';
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding: 0 16px 10px 0;
+  transition: 0.2s;
+  border: none;
+  outline: none;
+  color: #aaaa;
+  text-decoration: none;
+}
+
+.delete-btn a:hover{
+  color: #555555;
+  text-decoration: none;
 }

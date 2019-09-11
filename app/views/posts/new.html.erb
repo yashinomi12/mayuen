@@ -1,7 +1,10 @@
 <h1>post</h1>
 <%= form_tag('/blog', method: :post) do %>
   <div class="new-post-submit">
-    <input type="text" name="title">
+    <%= @post.errors.full_messages do |message| %>
+    <%= message %>
+    <% end %>
+    <textarea name="title" rows="1" cols="80"></textarea>
     <textarea name="content" rows="8" cols="80"></textarea>
     <input type="submit" value="submit">
   </div>

@@ -4,8 +4,9 @@
 <div class="box-index">
   <% @posts.each do |post| %>
     <div class="box-post">
-      <h2><%= post.created_at%></h2>
       <%= link_to post.title, "/blog/#{post.id}" %>
+      <p><%= post.created_at.to_s(:created_at) %></p>
     </div>
+
   <% end %>
 </div>
