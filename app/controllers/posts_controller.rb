@@ -33,7 +33,7 @@ class PostsController < ApplicationController
     @post.title = params[:title]
     @post.content = params[:content]
     @post.save
-    redirect_to("/blog")
+    redirect_to("/blog/#{@post.id}")
   end
 
   def destroy

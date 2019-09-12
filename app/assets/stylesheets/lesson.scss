@@ -5,23 +5,22 @@
 //  list-style: none;
 
 //}
-.lesson-class{
-  height: 490px;
+.lesson{
   width: 100%;
+  margin: 150px auto;
+  text-align: center;
 }
 
-ul{
-  margin-left: 100px;
-  margin-right: 50px;
+.lesson-class{
+  margin: auto;
+
 }
 
 .lesson-list{
-  margin:50px;
-  transition: transform 0.3s ease-out;
-}
-
-.lesson_list:hover {
-  transform: lesson-list(10deg);
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
 }
 
 
