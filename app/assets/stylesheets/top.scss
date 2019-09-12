@@ -41,13 +41,15 @@ li{
   font-family: 'Bradley Hand';
   font-size: 20px
 }
-
-.main{
-  height: 500px;
-  width: 100%;
-
+.main img{
+  display: block;
 }
-
+.main{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
 .footer{
   float:left;
   background-color: #ffffee;
