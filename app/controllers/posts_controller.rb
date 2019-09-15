@@ -17,7 +17,7 @@ class PostsController < ApplicationController
     params[:content]
     @post = Post.new(title: params[:title], content: params[:content])
     if @post.save
-      flash[:notice]
+      flash[:notice] = "投稿できました！"
       redirect_to("/blog")
     else
       render("posts/new")

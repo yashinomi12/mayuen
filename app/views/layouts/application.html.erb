@@ -25,7 +25,11 @@
 
       </div>
     </div>
-
+    <% if flash[:notice] %>
+      <div class="flash">
+        <div class="flash-text"><%= flash[:notice] %></div>
+      </div>
+    <% end %>
     <%= yield %>
 
     <div class="footer">
