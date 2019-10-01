@@ -1,7 +1,7 @@
 <h1>post</h1>
-<%= form_tag('/blog', method: :post) do %>
+<%= form_tag({contoller: :posts, action: :create}, {multipart: true}) do %>
   <div class="new-post-submit">
-    <%= @post.errors.full_messages do |message| %>
+    <% @post.errors.full_messages.each do |message| %>
     <%= message %>
     <% end %>
     <textarea name="title" rows="1" cols="80"></textarea>

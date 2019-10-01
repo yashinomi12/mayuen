@@ -15,7 +15,7 @@ h1{
     a:link {color:#222222; text-decoration: none;}
     a:visited {color:#222222; text-decoration: none;}
     background: #FAF0E6;
-    width: 30%;
+    width: 40%;
     margin: 20px auto;
 }
 
@@ -43,6 +43,7 @@ h1{
   font-size: 28px;
   padding: 10px 10px 0;
 }
+
 .content{
   font-size: 20px;
   padding:10px 30px 20px;
@@ -158,4 +159,23 @@ input[type="submit"]:hover{
 }
 .edit-btn, .delete-btn {
   display: inline-block
+}
+
+.like{
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.like_count{
+  display: inline;
+  color: #ff2581;
+}
+
+.like-btn-unlike{
+  color:#ff2581;
+
+}
+
+.like-btn{
+  color: #8899a6;
 }

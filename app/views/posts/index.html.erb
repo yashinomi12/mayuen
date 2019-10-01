@@ -1,5 +1,7 @@
 <div class="new-post">
+  <% if @current_user %>
   <%= link_to 'new', blog_new_path %>
+  <% end %>
 </div>
 <div class="box-index">
   <% @posts.each do |post| %>

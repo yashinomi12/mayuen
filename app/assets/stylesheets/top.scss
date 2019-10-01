@@ -2,13 +2,14 @@ body{
   font-family:'TsukuARdGothic-Regular';
   a:visited{text-decoration: none;}
   margin: auto;
+  width: 1440px;
 }
 
 
 .header{
   background-color: #ffffee;
   height: 140px;
-  width: 100%;
+
   z-index: 9999;
 }
 
@@ -67,6 +68,28 @@ li{
   text-align: center;
   font-weight: normal;
 }
+
+.footer-list{
+  font-family: 'TsukuARdGothic-Regular','Bradley Hand';
+  color: #aaaa;
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: normal;
+  a:visited {color:#000055;}
+  a:link {text-decoration: none;}
+  a:hover {text-decoration: none;}
+}
+
+.footer-list a{
+  display: block;
+  padding-right: 20px;
+}
 .flash{
-  margin:auto;
+  margin: auto;
+}
+
+
+.main{
+  text-align: center;
 }

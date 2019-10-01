@@ -5,12 +5,27 @@
   <div class="content">
     <%= @post.content %>
   </div>
-  <div class="btn">
-    <div class="edit-btn">
-      <%= link_to("edit", "/blog/#{@post.id}/edit") %>
-    </div>
-    <div class="delete-btn">
-      <%= link_to "delete", "/blog/#{@post.id}/destroy", method: :get %>
-    </div>
+  <div class="like">
+    <% if Like.find_by(user_id:@current_user.id, post_id:@post.id) %>
+      <%= link_to "likes/#{@post.id}/destroy" do %>
+        <span class="fa fa-heart like-btn-unlike"></span>
+        <p class="like_count"><%= @likes_count %></p>
+      <% end %>
+    <% else %>
+      <%= link_to "likes/#{@post.id}/create" do %>
+        <span class="fa fa-heart like-btn"></span>
+      <% end %>
+    <% end %>
   </div>
+
+  <% if @current_user %>
+    <div class="btn">
+      <div class="edit-btn">
+        <%= link_to("edit", "/blog/#{@post.id}/edit") %>
+      </div>
+      <div class="delete-btn">
+        <%= link_to "delete", "/blog/#{@post.id}/destroy", method: :get %>
+      </div>
+    </div>
+  <% end %>
 </div>

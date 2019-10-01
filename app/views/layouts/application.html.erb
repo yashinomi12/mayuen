@@ -4,7 +4,7 @@
     <title>Mayuen</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
   </head>
@@ -34,6 +34,15 @@
 
     <div class="footer">
       <h1>©️Mayumi Kometani</h1>
+      <div class="footer-list">
+        <% if @current_user  %>
+          <%= link_to 'ログアウト', logout_path , data: {method: :post} %>
+          <%= link_to '新しく記事を書く', blog_new_path %>
+        <% else %>
+          <%= link_to 'ログイン', login_path %>
+          <%= link_to '会員登録はこちら', users_new_path %>
+        <% end %>
+      </div>
     </div>
   </body>
 </html>
