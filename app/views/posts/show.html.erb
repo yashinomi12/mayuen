@@ -9,7 +9,7 @@
     <% if Like.find_by(user_id:@current_user.id, post_id:@post.id) %>
       <%= link_to "likes/#{@post.id}/destroy" do %>
         <span class="fa fa-heart like-btn-unlike"></span>
-        <% if @likes_count == 0  %>
+        <% if @likes_count != 0  %>
           <p class="unlike_count"><%= @likes_count %></p>
         <% end %>
       <% end %>
