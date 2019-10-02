@@ -166,9 +166,13 @@ input[type="submit"]:hover{
   display: inline-block;
 }
 
-.like_count{
+.unlike_count{
   display: inline;
   color: #ff2581;
+}
+.like_count{
+  display: inline;
+  color: #8899a6;
 }
 
 .like-btn-unlike{

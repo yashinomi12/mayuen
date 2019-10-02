@@ -37,7 +37,6 @@
       <div class="footer-list">
         <% if @current_user  %>
           <%= link_to 'ログアウト', logout_path , data: {method: :post} %>
-          <%= link_to '新しく記事を書く', blog_new_path %>
         <% else %>
           <%= link_to 'ログイン', login_path %>
           <%= link_to '会員登録はこちら', users_new_path %>
