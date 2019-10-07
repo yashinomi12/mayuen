@@ -8,6 +8,7 @@
 
 User.create!(
   name: "管理者",
-  email: "example@gmail.com"
-  password: "111111"
-  admin:true)
+  email: "example@gmail.com",
+  password: "111111",
+  admin:true
+)

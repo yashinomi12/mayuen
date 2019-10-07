@@ -1,6 +1,8 @@
 <div class="new-post">
-  <% if @current_user.admin == true %>
-  <%= link_to 'new', blog_new_path %>
+  <% if @current_user && @current_user.admin == true %>
+    <%= link_to 'new', blog_new_path %>
+  <% else %>
+    <p>index</p>
   <% end %>
 </div>
 <div class="box-index">
