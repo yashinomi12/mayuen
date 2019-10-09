@@ -1,14 +1,15 @@
-<h1>edit</h1>
-<div class="error-message">
-  <% @post.errors.full_messages.each do |message| %>
-    <%= message %>
+<div class="edit">
+  <p>編集する</p>
+  <div class="error-message">
+    <% @post.errors.full_messages.each do |message| %>
+      <%= message %>
+    <% end %>
+  </div>
+  <%= form_tag({contoller: :posts, action: :update}, {multipart: true}) do %>
+    <div class="new-post-submit">
+      <textarea name="title" rows="1" cols="80"><%= @post.title %></textarea>
+      <textarea name="content" rows="8" cols="80"><%= @post.content %></textarea>
+      <input type="submit" value="edit">
+    </div>
   <% end %>
 </div>
-<%= form_tag({contoller: :posts, action: :update}, {multipart: true}) do %>
-  <div class="new-post-submit">
-    <textarea name="title" rows="1" cols="80"><%= @post.title %></textarea>
-    <textarea name="content" rows="8" cols="80"><%= @post.content %></textarea>
-    <input type="file" name="image" value= "" >
-    <input type="submit" value="edit">
-  </div>
-<% end %>
