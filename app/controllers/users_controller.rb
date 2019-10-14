@@ -37,6 +37,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(name: params[:name], email: params[:email], password: params[:password])
     if @user.save
+      NotificationMailer.with(user: @user).send_confirm_to_user.deliver_now
       session[:user_id] = @user.id
       flash[:notice] = "ユーザー登録が完了したよ！"
       redirect_to("/")
