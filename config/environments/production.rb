@@ -67,11 +67,11 @@ Rails.application.configure do
     address: 'smtp.gmail.com',
     domein: 'smtp.gmail.com',
     user_name: 'kaoribako12@gmail.com',
-    password: 'yashi1223',
+    password: 'xbjhdbinnxbwohxk',
     authentication: 'login',
     enable_starttls_auto: true
   }
-  
+
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
